@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'nasa-quest'`, () => {
+  it(`should have as title 'nasa'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nasa-quest');
+    expect(app.title).toEqual('nasa');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('nasa-quest app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('nasa app is running!');
   });
 });
